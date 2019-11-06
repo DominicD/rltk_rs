@@ -20,7 +20,7 @@ pub fn init_raw<S: ToString>(
             f64::from(height_pixels),
         ));
     let windowed_context = ContextBuilder::new()
-        .with_vsync(true)
+        .with_vsync(false)
         .with_srgb(true)
         .build_windowed(wb, &el)
         .unwrap();
